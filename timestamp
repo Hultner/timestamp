@@ -5,7 +5,7 @@
 ##
 ## AUTHOR: Alexander Hultnér <ahultner+ghts@gmail.com>
 ##
-## USAGE: mv file.ext backup/file.$(timestamp).ext
+## USAGE: cp file.ext backup/file.$(timestamp).ext
 ##        vi notes-$(timestamp).txt
 ##        timestamp
 
