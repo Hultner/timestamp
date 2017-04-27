@@ -1,0 +1,12 @@
+#!/usr/bin/env sh
+#
+## DESCRIPTION: Creates a nice ISO-8601 timestamp for usage in filenames, this
+##              is a built in format in some implementations of date.
+##
+## AUTHOR: Alexander Hultnér <ahultner+ghts@gmail.com>
+##
+## USAGE: mv file.ext backup/file.$(timestamp).ext
+##        vi notes-$(timestamp).txt
+##        timestamp
+
+date -u +"%Y-%m-%dT%H:%M:%SZ"
