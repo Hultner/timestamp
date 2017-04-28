@@ -5,8 +5,12 @@
 ##
 ## AUTHOR: Alexander Hultnér <ahultner+ghts@gmail.com>
 ##
-## USAGE: cp file.ext backup/file.$(timestamp).ext
+## USAGE: cp file.ext backup/file.$(timestamp -u).ext
 ##        vi notes-$(timestamp).txt
 ##        timestamp
+##
+## OPTIONS:
+##   -u      Display or set the date in UTC (Coordinated Universal) time.
+##
 
-date -u +"%Y-%m-%dT%H:%M:%SZ"
+date $1 +"%Y-%m-%dT%H:%M:%S%z" | sed -e 's/+0000$/Z/g'  
