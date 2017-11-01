@@ -11,6 +11,12 @@
 ##
 ## OPTIONS:
 ##   -u      Display or set the date in UTC (Coordinated Universal) time.
+##   -d      Display only the current day, i.e. 2017-11-01
 ##
+
+if [ "$1" = "day" ]||[ "$1" = "-d" ]; then
+    date $2  +"%Y-%m-%d"
+    exit 0;
+fi
 
 date $1 +"%Y-%m-%dT%H:%M:%S%z" | sed -e 's/+0000$/Z/g'  
