@@ -7,7 +7,7 @@ format in some implementations of date.
 Put the script somewhere in you path, i.e. in $HOME/bin (only you)
 or /usr/local/bin (everyone)
 ```sh
-sudo cp template /usr/local/bin
+sudo cp timestamp /usr/local/bin
 ```
 
 ## Usage
