@@ -26,3 +26,13 @@ Just show the current timestamp
 timestamp
 ```
 
+### Only use the day
+Sometimes you only want the day and not the full timestamp, for those cases I've
+added the `day` option which can also be invoked with `-d` like below
+```sh
+$ timestamp day
+2017-11-07
+$ echo notes-$(timestamp -d).txt
+notes-2017-11-07.txt
+```
+
